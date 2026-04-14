@@ -1,16 +1,16 @@
-// import './App.css'
+import './App.css'
+import { Header } from './components/Header'
 
-function Title(){
-  return (
-    <h1>Teste Incial do projeto </h1>
-  )
-}
 
 function App() {
   
 
   return (
-    <Title/>
+    <>
+    <Header/>
+    
+    
+    </>
   )
 }
 
