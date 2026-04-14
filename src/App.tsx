@@ -1,11 +1,17 @@
-import { useState } from 'react'
+// import './App.css'
 
-import './App.css'
+function Title(){
+  return (
+    <h1>Teste Incial do projeto </h1>
+  )
+}
 
 function App() {
   
 
-  return 
+  return (
+    <Title/>
+  )
 }
 
 export default App

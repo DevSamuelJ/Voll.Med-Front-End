@@ -24,20 +24,7 @@ cd VollMed
 
 Certifique-se de ter instalados:
 
-- Python 3.13+
-- Astral UV
-- Node.js 20+
-- Yarn
-- Docker e Docker Compose (para ambiente de integração ou banco de dados local)
 
-Após instalar, você pode instalar as dependências dos projetos localmente seguindo os passos abaixo:
-
-- Backend
-
-  ```bash
-  cd backend
-  uv sync
-  ```
 
 - Frontend
 
@@ -76,13 +63,6 @@ O projeto será iniciado e estará disponível em:
 - Web → http://localhost:3000
 
 ## 🧪 Rodando testes e formatadores
-
-- Backend
-
-  ```bash
-  task format
-  task test
-  ```
 
 - Frontend
 
@@ -134,28 +114,6 @@ Após isso, abra o arquivo "settings.json" em "Preferences: Open User Settings (
       "source.fixAll.eslint": "always"
     }
   }
-}
-```
-
-#### Backend
-
-Para configurar a extensão do linter e formatador do backend, será necessário instalar a extenção do `Ruff`
-
-![ruff-extension](.github/assets/ruff-extension.png)
-
-Após isso, abra o arquivo "settings.json" em "Preferences: Open User Settings (JSON)", e adicione as linhas abaixo:
-
-```json
-{
-  // Python
-  "[python]": {
-    "editor.defaultFormatter": "charliermarsh.ruff",
-    "editor.codeActionsOnSave": {
-      "source.fixAll": "explicit"
-    }
-  },
-  "python.analysis.autoImportCompletions": true,
-  "python.analysis.typeCheckingMode": "strict"
 }
 ```
 
